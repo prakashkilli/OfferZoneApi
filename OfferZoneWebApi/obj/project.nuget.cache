@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sIkKuF7nzBAzwywlAgkaWWTb7PqjDcEu7Ko+BXEwonteXHwK8umZ1h5AFXqQvGQmI/gI8AuI1v6u4il0Za1aPg==",
+  "dgSpecHash": "dSbDDL6+sa+e4LSbZniihQM94KYSwl7sbWxEWvjLdbhkpS3N+9rtr9YsUpPaa5Z20F3BZMuuHamQLrpSqwXmcg==",
   "success": true,
-  "projectFilePath": "D:\\surya\\OfferZoneWebApi\\OfferZoneWebApi.csproj",
+  "projectFilePath": "D:\\surya\\OfferZoneApi\\OfferZoneWebApi\\OfferZoneWebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kprakash\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
     "C:\\Users\\kprakash\\.nuget\\packages\\microsoft.data.sqlclient\\2.1.4\\microsoft.data.sqlclient.2.1.4.nupkg.sha512",

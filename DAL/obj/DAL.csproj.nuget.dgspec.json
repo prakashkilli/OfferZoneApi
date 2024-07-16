@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\surya\\DAL\\DAL.csproj": {}
+    "D:\\surya\\OfferZoneApi\\DAL\\DAL.csproj": {}
   },
   "projects": {
-    "D:\\surya\\DAL\\DAL.csproj": {
+    "D:\\surya\\OfferZoneApi\\DAL\\DAL.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\surya\\DAL\\DAL.csproj",
+        "projectUniqueName": "D:\\surya\\OfferZoneApi\\DAL\\DAL.csproj",
         "projectName": "DAL",
-        "projectPath": "D:\\surya\\DAL\\DAL.csproj",
+        "projectPath": "D:\\surya\\OfferZoneApi\\DAL\\DAL.csproj",
         "packagesPath": "C:\\Users\\kprakash\\.nuget\\packages\\",
-        "outputPath": "D:\\surya\\DAL\\obj\\",
+        "outputPath": "D:\\surya\\OfferZoneApi\\DAL\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
