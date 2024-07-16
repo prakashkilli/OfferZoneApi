@@ -11,5 +11,6 @@ namespace DAL.Models
         public string UserName { get; set; } = null!;
         public string Email { get; set; } = null!;
         public string PassWord { get; set; } = null!;
+        public bool? IsAdmin { get; set; }
     }
 }

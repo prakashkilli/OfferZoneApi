@@ -16,8 +16,13 @@ namespace DAL.Models
         {
         }
 
+        public virtual DbSet<Brand> Brands { get; set; } = null!;
+        public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Dept> Depts { get; set; } = null!;
         public virtual DbSet<Emp> Emps { get; set; } = null!;
+        public virtual DbSet<Product> Products { get; set; } = null!;
+        public virtual DbSet<ProductSize> ProductSizes { get; set; } = null!;
+        public virtual DbSet<Size> Sizes { get; set; } = null!;
         public virtual DbSet<Test> Tests { get; set; } = null!;
         public virtual DbSet<User> Users { get; set; } = null!;
 
@@ -32,6 +37,16 @@ namespace DAL.Models
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            modelBuilder.Entity<Brand>(entity =>
+            {
+                entity.Property(e => e.BrandName).HasMaxLength(100);
+            });
+
+            modelBuilder.Entity<Category>(entity =>
+            {
+                entity.Property(e => e.CategoryName).HasMaxLength(50);
+            });
+
             modelBuilder.Entity<Dept>(entity =>
             {
                 entity.ToTable("dept");
@@ -73,6 +88,52 @@ namespace DAL.Models
                     .WithMany(p => p.Emps)
                     .HasForeignKey(d => d.Deptid)
                     .HasConstraintName("FK__emp__deptid__25869641");
+            });
+
+            modelBuilder.Entity<Product>(entity =>
+            {
+                entity.Property(e => e.CreatedAt)
+                    .HasColumnType("datetime")
+                    .HasDefaultValueSql("(getdate())");
+
+                entity.Property(e => e.ImageUrl).HasMaxLength(255);
+
+                entity.Property(e => e.Price).HasColumnType("decimal(10, 2)");
+
+                entity.Property(e => e.ProductName).HasMaxLength(100);
+
+                entity.HasOne(d => d.Brand)
+                    .WithMany(p => p.Products)
+                    .HasForeignKey(d => d.BrandId)
+                    .HasConstraintName("FK__Products__BrandI__5441852A");
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Products)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK__Products__Catego__534D60F1");
+            });
+
+            modelBuilder.Entity<ProductSize>(entity =>
+            {
+                entity.HasOne(d => d.Product)
+                    .WithMany(p => p.ProductSizes)
+                    .HasForeignKey(d => d.ProductId)
+                    .HasConstraintName("FK__ProductSi__Produ__59FA5E80");
+
+                entity.HasOne(d => d.Size)
+                    .WithMany(p => p.ProductSizes)
+                    .HasForeignKey(d => d.SizeId)
+                    .HasConstraintName("FK__ProductSi__SizeI__5AEE82B9");
+            });
+
+            modelBuilder.Entity<Size>(entity =>
+            {
+                entity.Property(e => e.SizeName).HasMaxLength(10);
+
+                entity.HasOne(d => d.Category)
+                    .WithMany(p => p.Sizes)
+                    .HasForeignKey(d => d.CategoryId)
+                    .HasConstraintName("FK__Sizes__CategoryI__571DF1D5");
             });
 
             modelBuilder.Entity<Test>(entity =>
@@ -117,6 +178,8 @@ namespace DAL.Models
                     .HasMaxLength(50)
                     .IsUnicode(false)
                     .HasColumnName("firstName");
+
+                entity.Property(e => e.IsAdmin).HasDefaultValueSql("((0))");
 
                 entity.Property(e => e.LastName)
                     .HasMaxLength(50)
