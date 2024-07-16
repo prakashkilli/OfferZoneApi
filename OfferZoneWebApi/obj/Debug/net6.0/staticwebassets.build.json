@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "okg9ddiOJ5ewcwHhbEV+6zi5+txTH7CjaAyBmSAhwY0=",
+  "Source": "OfferZoneWebApi",
+  "BasePath": "_content/OfferZoneWebApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
