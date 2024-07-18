@@ -65,9 +65,11 @@ D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\OfferZoneWebApi.deps.json
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\OfferZoneWebApi.runtimeconfig.json
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\OfferZoneWebApi.dll
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\OfferZoneWebApi.pdb
+D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Humanizer.dll
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
 D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Microsoft.Identity.Client.dll
@@ -118,5 +120,3 @@ D:\surya\OfferZoneApi\OfferZoneWebApi\obj\Debug\net6.0\refint\OfferZoneWebApi.dl
 D:\surya\OfferZoneApi\OfferZoneWebApi\obj\Debug\net6.0\OfferZoneWebApi.pdb
 D:\surya\OfferZoneApi\OfferZoneWebApi\obj\Debug\net6.0\OfferZoneWebApi.genruntimeconfig.cache
 D:\surya\OfferZoneApi\OfferZoneWebApi\obj\Debug\net6.0\ref\OfferZoneWebApi.dll
-D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Humanizer.dll
-D:\surya\OfferZoneApi\OfferZoneWebApi\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Design.dll

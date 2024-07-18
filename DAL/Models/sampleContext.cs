@@ -20,7 +20,7 @@ namespace DAL.Models
         public virtual DbSet<Category> Categories { get; set; } = null!;
         public virtual DbSet<Dept> Depts { get; set; } = null!;
         public virtual DbSet<Emp> Emps { get; set; } = null!;
-        public virtual DbSet<Product> Products { get; set; } = null!;
+        public virtual DbSet<Product> Products { get; set; } = null!;  
         public virtual DbSet<ProductSize> ProductSizes { get; set; } = null!;
         public virtual DbSet<Size> Sizes { get; set; } = null!;
         public virtual DbSet<Test> Tests { get; set; } = null!;
