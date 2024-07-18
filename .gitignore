@@ -361,3 +361,8 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/DAL/obj
+/OfferZoneWebApi/.vs
+/OfferZoneWebApi/obj
+/DAL/bin
+/OfferZoneWebApi/bin
